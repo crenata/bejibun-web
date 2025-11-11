@@ -2,6 +2,7 @@ import {useState} from "react";
 import {NavLink} from "react-router";
 import Copy from "../components/Copy";
 import Template from "../components/layout/Template";
+import Card from "../components/Card";
 
 function Home() {
     const [activeTab, setActiveTab] = useState("linux");
@@ -53,7 +54,7 @@ function Home() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-16">
-                <div className="border border-[#2E2B3F] bg-[#0F0F1A] rounded-xl p-5">
+                <Card>
                     <h1 className="text-3xl flex items-center gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -105,9 +106,9 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Card>
 
-                <div className="border border-[#2E2B3F] bg-[#0F0F1A] rounded-xl p-5">
+                <Card>
                     <h1 className="text-3xl flex items-center gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +136,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Card>
             </div>
 
             <div className="mt-8">

@@ -22,7 +22,7 @@ function Template({children}: TTemplate) {
                                 alt="Logo"
                                 style={{height: 44}}
                             />
-                            Bejibun
+                            {import.meta.env.VITE_APP_NAME}
                         </NavLink>
 
                         <div className="hidden md:flex space-x-8 items-center">

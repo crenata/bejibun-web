@@ -1,5 +1,6 @@
 import Template from "../components/layout/Template";
 import {NavLink} from "react-router";
+import Card from "../components/Card";
 
 function Community() {
     const communities = [
@@ -28,30 +29,32 @@ function Community() {
 
     return (
         <Template>
-            <h1 className="text-3xl font-semibold text-center">Bejibun Community</h1>
+            <h1 className="text-3xl font-semibold text-center">{import.meta.env.VITE_APP_NAME} Community</h1>
             <div className="grid grid-cols-6 mt-14">
                 <div className="col-span-6 lg:col-span-4 lg:col-start-2">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {communities.map(value => (
-                            <NavLink
-                                to={value.url}
-                                target="_blank"
-                                className="md:flex items-center border border-[#2E2B3F] bg-[#0F0F1A] rounded-xl p-8 gap-8"
-                                key={value.id}
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    className="w-1/4"
-                                    viewBox="0 0 16 16"
+                            <Card>
+                                <NavLink
+                                    to={value.url}
+                                    target="_blank"
+                                    className="md:flex items-center gap-8"
+                                    key={value.id}
                                 >
-                                    {value.svgPath}
-                                </svg>
-                                <div className="lg:w-3/4 mt-5 md:mt-0">
-                                    <h1 className="text-3xl">{value.name}</h1>
-                                    <p className="mt-4">{value.description}</p>
-                                </div>
-                            </NavLink>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        className="w-1/4"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        {value.svgPath}
+                                    </svg>
+                                    <div className="lg:w-3/4 mt-5 md:mt-0">
+                                        <h1 className="text-3xl">{value.name}</h1>
+                                        <p className="mt-4">{value.description}</p>
+                                    </div>
+                                </NavLink>
+                            </Card>
                         ))}
                     </div>
                 </div>
