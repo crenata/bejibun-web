@@ -26,7 +26,7 @@ function Template({children}: TTemplate) {
                         </NavLink>
 
                         <div className="hidden md:flex space-x-8 items-center">
-                            <NavLink to="#" className="text-white/90 hover:text-white transition-color">Docs</NavLink>
+                            <NavLink to="/docs" className="text-white/90 hover:text-white transition-color">Docs</NavLink>
                             <NavLink to="#" className="text-white/90 hover:text-white transition-color">Blog</NavLink>
                             <NavLink
                                 to="/community"
@@ -98,7 +98,7 @@ function Template({children}: TTemplate) {
                 {isOpen && (
                     <div className="md:hidden shadow-inner animate-slide-down">
                         <NavLink
-                            to="#"
+                            to="/docs"
                             className="block px-4 py-2 text-white/90 hover:text-white transition-color"
                         >
                             Docs
