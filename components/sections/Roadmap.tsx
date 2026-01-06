@@ -33,16 +33,16 @@ export function Roadmap() {
               <Check className="size-[16px]" /><p className="text-white/90 text-sm">Rate Limiter</p>
             </div>
             <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-              <Check className="size-[16px]" /><p className="text-white/90 text-sm">Cors <a href="https://github.com/crenata/bejibun-cors/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline"> (@bejibun/cors)</a></p>
+              <Check className="size-[16px]" /><p className="text-white/90 text-sm">Cors <a href="https://github.com/Bejibun-Framework/bejibun-cors/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline"> (@bejibun/cors)</a></p>
             </div>
             <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-              <Check className="size-[16px]" /><p className="text-white/90 text-sm">Redis <a href="https://github.com/crenata/bejibun-redis/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline">(@bejibun/redis)</a></p>
+              <Check className="size-[16px]" /><p className="text-white/90 text-sm">Redis <a href="https://github.com/Bejibun-Framework/bejibun-redis/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline">(@bejibun/redis)</a></p>
             </div>
             <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-              <Check className="size-[16px]" /><p className="text-white/90 text-sm">Cache <a href="https://github.com/crenata/bejibun-cache/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline">(@bejibun/cache)</a></p>
+              <Check className="size-[16px]" /><p className="text-white/90 text-sm">Cache <a href="https://github.com/Bejibun-Framework/bejibun-cache/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline">(@bejibun/cache)</a></p>
             </div>
             <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-              <Check className="size-[16px]" /><p className="text-white/90 text-sm">x402 Protocol <a href="https://github.com/crenata/bejibun-x402/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline">(@bejibun/x402)</a></p>
+              <Check className="size-[16px]" /><p className="text-white/90 text-sm">x402 Protocol <a href="https://github.com/Bejibun-Framework/bejibun-x402/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline">(@bejibun/x402)</a></p>
             </div>
             <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3">
               <Check className="size-[16px]" /><p className="text-white/90 text-sm">Listing <a href="https://www.coingecko.com/en/coins/bejibun" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:underline">Coingecko</a></p>

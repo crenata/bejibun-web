@@ -131,7 +131,7 @@ export function Navigation() {
                                 className="rounded-xl text-white/80 hover:text-white hover:bg-white/10"
                             >
                                 <a
-                                    href="https://github.com/crenata/bejibun"
+                                    href="https://github.com/Bejibun-Framework/bejibun"
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="Open GitHub"
@@ -216,7 +216,7 @@ export function Navigation() {
                                             className="rounded-xl text-white/80 hover:text-white hover:bg-white/10"
                                         >
                                             <a
-                                                href="https://github.com/crenata/bejibun"
+                                                href="https://github.com/Bejibun-Framework/bejibun"
                                                 target="_blank"
                                                 rel="noreferrer"
                                                 aria-label="Open GitHub"

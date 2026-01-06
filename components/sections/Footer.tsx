@@ -42,7 +42,7 @@ export function Footer() {
               Docs
             </a>
             <a
-              href="https://github.com/crenata/bejibun"
+              href="https://github.com/Bejibun-Framework/bejibun"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors"

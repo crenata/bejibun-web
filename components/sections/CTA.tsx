@@ -76,7 +76,7 @@ export function CTA() {
                 asChild
                 className="px-8 py-6 text-lg rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:scale-105 transition-transform"
               >
-                <a href="https://github.com/crenata/bejibun" target="_blank" rel="noreferrer">
+                <a href="https://github.com/Bejibun-Framework/bejibun" target="_blank" rel="noreferrer">
                   <Github className="mr-2 size-5" />
                   GitHub
                 </a>
