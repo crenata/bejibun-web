@@ -1,17 +1,9 @@
-import {
-    Sparkles,
-    Info,
-    FilePlus,
-} from "lucide-react";
-
-import { motion } from "framer-motion";
-
-import { AnimatedGradientText } from "../ui/animated-gradient-text";
-
-import { ShootingStars } from "../ui/shooting-stars";
-import { StarsBackground } from "../ui/stars-background";
-
-import { AnimatedSpan, Terminal, TypingAnimation } from "../ui/terminal";
+import {Sparkles, Info, FilePlus} from "lucide-react";
+import {motion} from "framer-motion";
+import {AnimatedGradientText} from "@/components/ui/animated-gradient-text";
+import {ShootingStars} from "@/components/ui/shooting-stars";
+import {StarsBackground} from "@/components/ui/stars-background";
+import {AnimatedSpan, Terminal, TypingAnimation} from "@/components/ui/terminal";
 
 // Terminal line data structure with custom icons and colors
 const TERMINAL_LINES: Array<{ text: string; className: string }> = [
@@ -40,10 +32,12 @@ function BackgroundGradients() {
     return (
         <>
             {/* Purple gradient blob - bottom left */}
-            <div className="absolute bg-brand-purple/30 blur-[120px] filter left-[-50px] opacity-30 rounded-full size-[400px] md:size-[600px] top-[40%] md:top-[556px]" />
+            <div
+                className="absolute bg-brand-purple/30 blur-[120px] filter left-[-50px] opacity-30 rounded-full size-[400px] md:size-[600px] top-[40%] md:top-[556px]"/>
 
             {/* Pink gradient blob - top right */}
-            <div className="absolute bg-brand-pink/30 blur-[120px] filter right-[-50px] md:left-[858px] opacity-30 rounded-full size-[400px] md:size-[600px] top-[10%] md:top-[30px]" />
+            <div
+                className="absolute bg-brand-pink/30 blur-[120px] filter right-[-50px] md:left-[858px] opacity-30 rounded-full size-[400px] md:size-[600px] top-[10%] md:top-[30px]"/>
 
             {/* Central gradient circle with glow effect - hide on mobile for performance */}
             <div className="hidden md:block absolute left-1/2 size-[2214px] top-[627px] translate-x-[-50%]">
@@ -84,8 +78,8 @@ function BackgroundGradients() {
                                     type="matrix"
                                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 />
-                                <feOffset />
-                                <feGaussianBlur stdDeviation="15.5464" />
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="15.5464"/>
                                 <feColorMatrix
                                     type="matrix"
                                     values="0 0 0 0 0.415686 0 0 0 0 0.360784 0 0 0 0 1 0 0 0 1 0"
@@ -101,8 +95,8 @@ function BackgroundGradients() {
                                     type="matrix"
                                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 />
-                                <feOffset />
-                                <feGaussianBlur stdDeviation="31.0929" />
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="31.0929"/>
                                 <feColorMatrix
                                     type="matrix"
                                     values="0 0 0 0 0.415686 0 0 0 0 0.360784 0 0 0 0 1 0 0 0 1 0"
@@ -118,8 +112,8 @@ function BackgroundGradients() {
                                     type="matrix"
                                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 />
-                                <feOffset />
-                                <feGaussianBlur stdDeviation="108.825" />
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="108.825"/>
                                 <feColorMatrix
                                     type="matrix"
                                     values="0 0 0 0 0.415686 0 0 0 0 0.360784 0 0 0 0 1 0 0 0 1 0"
@@ -135,8 +129,8 @@ function BackgroundGradients() {
                                     type="matrix"
                                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 />
-                                <feOffset />
-                                <feGaussianBlur stdDeviation="125" />
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="125"/>
                                 <feColorMatrix
                                     type="matrix"
                                     values="0 0 0 0 0.415686 0 0 0 0 0.360784 0 0 0 0 1 0 0 0 1 0"
@@ -152,8 +146,8 @@ function BackgroundGradients() {
                                     type="matrix"
                                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 />
-                                <feOffset />
-                                <feGaussianBlur stdDeviation="125" />
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="125"/>
                                 <feColorMatrix
                                     type="matrix"
                                     values="0 0 0 0 0.415686 0 0 0 0 0.360784 0 0 0 0 1 0 0 0 1 0"
@@ -169,8 +163,8 @@ function BackgroundGradients() {
                                     type="matrix"
                                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 />
-                                <feOffset />
-                                <feGaussianBlur stdDeviation="125" />
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="125"/>
                                 <feColorMatrix
                                     type="matrix"
                                     values="0 0 0 0 0.415686 0 0 0 0 0.360784 0 0 0 0 1 0 0 0 1 0"
@@ -195,8 +189,8 @@ function BackgroundGradients() {
                                 y1="250"
                                 y2="2464"
                             >
-                                <stop stopColor="#403799" />
-                                <stop offset="1" stopColor="#6A5CFF" />
+                                <stop stopColor="#403799"/>
+                                <stop offset="1" stopColor="#6A5CFF"/>
                             </linearGradient>
                         </defs>
                     </svg>
@@ -211,13 +205,14 @@ function HeroContent() {
     return (
         <motion.div
             className="relative z-10 flex flex-col items-center text-center px-4 md:px-6 pt-[120px] md:pt-[120px] max-w-[1106px] mx-auto w-full"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            initial={{opacity: 0, y: 20}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{duration: 0.6}}
         >
             {/* Chip badge */}
-            <div className="flex gap-[10px] items-center justify-center px-[16px] py-[4px] rounded-[9999px] mb-[24px] md:mb-[32px] relative">
+            <div
+                className="flex gap-[10px] items-center justify-center px-[16px] py-[4px] rounded-[9999px] mb-[24px] md:mb-[32px] relative">
                 <div
                     aria-hidden="true"
                     className="absolute border border-brand-purple border-solid inset-0 pointer-events-none rounded-[9999px]"
@@ -226,7 +221,8 @@ function HeroContent() {
                     className="size-[14px] md:size-[16px] text-brand-pink"
                     strokeWidth={1.33333}
                 />
-                <AnimatedGradientText className="leading-[28px] md:leading-[36px] text-[14px] md:text-[16px] tracking-[-0.2px]">
+                <AnimatedGradientText
+                    className="leading-[28px] md:leading-[36px] text-[14px] md:text-[16px] tracking-[-0.2px]">
                     Bun-Native Framework
                 </AnimatedGradientText>
             </div>
@@ -249,7 +245,7 @@ function HeroContent() {
             </div>
 
             {/* CTA buttons */}
-            <CTAButtons />
+            <CTAButtons/>
         </motion.div>
     );
 }
@@ -266,7 +262,8 @@ function CTAButtons() {
                 className="flex h-[44px] md:h-[48px] items-center justify-center px-[14px] py-0 rounded-[6px] bg-gradient-to-br from-brand-purple to-brand-pink w-full sm:w-auto transition-transform active:scale-[0.98] hover:scale-[1.02]"
             >
                 <div className="flex flex-col items-center overflow-clip px-[6px] py-0">
-                    <div className="flex flex-col justify-center leading-[0] not-italic text-center text-nowrap text-white">
+                    <div
+                        className="flex flex-col justify-center leading-[0] not-italic text-center text-nowrap text-white">
                         <p className="leading-[24px] text-[15px] md:text-[16px]">Get Started</p>
                     </div>
                 </div>
@@ -279,9 +276,11 @@ function CTAButtons() {
                 rel="noreferrer"
                 className="bg-black/60 h-[44px] md:h-[48px] relative rounded-[6px] w-full sm:w-auto transition-transform active:scale-[0.98] hover:scale-[1.02]"
             >
-                <div className="flex h-full items-center justify-center overflow-clip px-[14px] py-0 relative rounded-[inherit]">
+                <div
+                    className="flex h-full items-center justify-center overflow-clip px-[14px] py-0 relative rounded-[inherit]">
                     <div className="flex flex-col items-center overflow-clip px-[6px] py-0">
-                        <div className="flex flex-col justify-center leading-[0] not-italic text-foreground text-center text-nowrap">
+                        <div
+                            className="flex flex-col justify-center leading-[0] not-italic text-foreground text-center text-nowrap">
                             <p className="leading-[24px] text-[15px] md:text-[16px]">Buy $BJBN</p>
                         </div>
                     </div>
@@ -306,10 +305,10 @@ function CodeTerminal() {
     return (
         <motion.div
             className="relative z-10 mx-auto px-4 md:px-6 pb-[60px] md:pb-[80px] w-full max-w-[1150px]"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            initial={{opacity: 0, y: 20}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{duration: 0.6, delay: 0.1}}
         >
             <Terminal
                 className="max-w-none bg-white/5 border-white/10 text-white shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] rounded-[12px] md:rounded-[16px]"
@@ -378,12 +377,12 @@ export function Hero() {
     return (
         <section id="hero" className="bg-black relative min-h-screen w-full flex flex-col overflow-hidden">
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <StarsBackground className="opacity-80" />
-                <ShootingStars className="opacity-60" />
+                <StarsBackground className="opacity-80"/>
+                <ShootingStars className="opacity-60"/>
             </div>
-            <BackgroundGradients />
-            <HeroContent />
-            <CodeTerminal />
+            <BackgroundGradients/>
+            <HeroContent/>
+            <CodeTerminal/>
         </section>
     );
 }
