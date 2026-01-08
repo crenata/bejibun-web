@@ -108,7 +108,7 @@ function SectionHeader() {
 
 function TabButton({title, icon: Icon, isActive, onClick, progress, onHoverChange}: {
     title: string;
-    icon: typeof Icon;
+    icon: any;
     isActive: boolean;
     onClick: () => void;
     progress: MotionValue<number>;
